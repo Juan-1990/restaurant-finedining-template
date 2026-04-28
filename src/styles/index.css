@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal-950 text-cream-100 font-body antialiased;
+    cursor: default;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-charcoal-950;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold-600 rounded-full;
+  }
+}
+
+@layer components {
+  .section-tag {
+    @apply font-accent text-gold-400 text-xs tracking-widest3 uppercase mb-4 block;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl text-cream-100 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply font-body text-cream-300 text-lg font-light leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-3 bg-gold-500 text-charcoal-950 font-accent text-xs tracking-widest2 uppercase px-8 py-4 transition-all duration-300 hover:bg-gold-400 hover:gap-4;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-3 border border-gold-500 text-gold-400 font-accent text-xs tracking-widest2 uppercase px-8 py-4 transition-all duration-300 hover:bg-gold-500 hover:text-charcoal-950;
+  }
+
+  .divider-gold {
+    @apply w-16 h-px bg-gold-500 mx-auto my-6;
+  }
+
+  .card-dark {
+    @apply bg-charcoal-900 border border-charcoal-800 p-8 transition-all duration-300 hover:border-gold-600;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #e2a820 0%, #f2d98a 50%, #c88a10 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-overlay-dark {
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 9, 6, 0.3) 0%,
+      rgba(10, 9, 6, 0.6) 50%,
+      rgba(10, 9, 6, 0.9) 100%
+    );
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(194, 138, 16, 0.3);
+  }
+}
