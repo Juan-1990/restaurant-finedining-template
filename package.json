@@ -1,6 +1,6 @@
 {
   "name": "restaurant-finedining-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Professional Fine Dining Restaurant Landing Page — React Vite Template",
   "type": "module",
   "scripts": {
@@ -10,10 +10,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "framer-motion": "^11.0.0",
-    "lucide-react": "^0.363.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.363.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
